@@ -19,7 +19,6 @@ for message in st.session_state.messages:
     st.chat_message(message['role']).markdown(message['content'])
 
 prompt=st.chat_input('enter a message')
-
 if prompt:
     st.chat_message('user').markdown(prompt)
     # store the user prompts
