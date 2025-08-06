@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: rag-pdf-chatbot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run invokeLLM.py --server.port=$PORT --server.address=0.0.0.0
+    envVars:
+      - key: GROQ_API_KEY
+        value: your_api_key_here

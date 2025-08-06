@@ -8,7 +8,7 @@ import streamlit as st
 warnings.filterwarnings("ignore")
 logging.getLogger("transformers").setLevel(logging.ERROR)
 
-st.title("ChatUI")
+st.title("ALchatty")
 # setup a session to hold all old messages or convos
 if 'messages' not in st.session_state:
     st.session_state.messages=[]
